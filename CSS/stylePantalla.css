@@ -1,0 +1,101 @@
+header {
+  background-color: yellow;
+}
+
+nav {
+  background-color: orange;
+}
+
+h1,
+h2 {
+  text-align: center;
+}
+
+h1 {
+  font-size: 2rem;
+}
+h2 {
+  font-size: 1.5rem;
+}
+
+h3 {
+  font-size: 1.2rem;
+}
+
+body {
+  margin: 8px;
+  padding: 0 0.5rem;
+}
+
+a {
+  color: #1d2020 !important;
+  font-size: 1.2rem;
+  margin-left: 0.2rem;
+}
+
+footer {
+  background-color: pink;
+  font-size: 1.2rem;
+}
+
+footer > p > a {
+  font-size: 1.2rem;
+  text-decoration: underline;
+}
+
+.border {
+  border-radius: 10px;
+  margin-bottom: 0.3rem;
+}
+
+.seccion {
+  background-color: blue;
+  color: #ffffff;
+  padding-top: 1.3rem;
+}
+
+#menu {
+  background-color: #a8d8e5;
+}
+
+#boton-navbar {
+  margin: 0.5rem 1rem;
+}
+
+.seccion p {
+  margin: 0.5rem;
+}
+
+@media (max-width: 767.98px) {
+  li > a {
+    border-bottom: 1px solid #268197;
+  }
+}
+
+@media (min-width: 767.98px) {
+  .container {
+    max-width: 900px;
+  }
+  #menu {
+    background-color: unset;
+  }
+  .nav-link {
+    padding: 0.3rem 1rem;
+  }
+  ul {
+    margin: 0.4rem 0 !important;
+    width: 100%;
+    flex-direction: column !important;
+  }
+
+  .seccion {
+    margin-left: 0.4rem;
+    border-width: 0px !important;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1800px;
+  }
+}

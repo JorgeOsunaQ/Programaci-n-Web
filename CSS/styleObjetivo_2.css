@@ -1,0 +1,45 @@
+body{
+    margin: 0.4rem;
+    background-color: rgb(198, 224,236);
+    font-family: sans-serif;
+}
+
+h1{
+    text-align: center;
+    font-size: 3rem;
+    text-decoration: underline;
+}
+
+p{
+    text-align: justify;
+}
+
+blockquote{
+    font-style: italic;
+}
+
+pre{
+    background-color: white;
+    font-weight: bold;
+}
+
+footer{
+    font-family: serif;
+    text-align: right;
+    margin-bottom: 2rem;
+}
+
+.sub_nivel2{
+    background-color: #79B8D2;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 1rem 0;
+}
+
+.sub_nivel1{
+    font-weight: bold;
+    background-color: #4099BF;
+    font-size: 2rem;
+    margin: 1.6rem 0;
+}

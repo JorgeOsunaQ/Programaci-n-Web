@@ -1,0 +1,45 @@
+body{
+    background-color: lightgray;
+    font-family: sans-serif;
+    margin: 0;
+}
+
+p{
+    text-indent: 2rem;
+    margin: 1% 10%;
+    text-align: justify;
+}
+
+i{
+    color: red;
+}
+
+b{
+    background-color: #FFF;
+}
+
+h1{
+    font-size: 300%;
+    letter-spacing: 10px;
+    display: block;
+    text-align: center;
+}
+h2{
+    font-size: 2.1rem;
+    background-color: gray;
+    padding: 0.2rem 0.5rem;
+    color: #FFF;
+    clear: both;
+}
+
+img{
+    width: 110px;
+    float: left;
+    margin-bottom: 10px;
+    padding-right: 2%;
+}
+
+
+div{
+    margin: .2% 9.5%;
+}
