@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../CSS/bootstrap.css" type="text/css" />
+    <link rel="stylesheet" href="../CSS/styeCalculadora.css" type="text/css" />
+    <script src="https://kit.fontawesome.com/a133162df1.js"crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto"/>
+    <title>Calculadora</title>
+  </head>
+  <body>
+    <div class="section">
+      <div class="container">
+        <div class="row mt-4">
+          <h3 class="mx-1 mx-sm-0">Calculadora</h3>
+
+          <div id="calculadora" class="col-12 col-md-6 shadow">
+              <!--Display-->
+              <div id="display" class="row align-items-end px-2 justify-content-end">
+                <p id="memory" class="w-100 mb-0 mt-1"></p>
+                <input id="in-display" class="mb-0 w-100" disabled value="0">
+              </div> 
+
+              <div id="botones" class="row p-1 justify-content-end">
+                <!--Primera Fila-->
+                <button id="boton-C" class="btn border col-3 px-0 operador-op" >C</button>
+                <button id="boton-CE" class="btn border col-3 px-0 operador-op" >CE</button>
+                <button id="boton-backspace" class="btn border col-3 px-0"><i class="fas fa-backspace"></i></button>
+                <button id="boton-division" class="btn border col-3 px-0 operador" value='÷'><i class="fas fa-divide"></i></button>
+                <!--Segunda Fila-->
+                <button id="boton-7" class="btn border col-3 px-0 number" value=7>7</button>
+                <button id="boton-8" class="btn border col-3 px-0 number" value=8>8</button>
+                <button id="boton-9" class="btn border col-3 px-0 number" value=9>9</button>
+                <button id="boton-multiplicacion" class="btn border col-3 px-0 operador" value='*'><i class="fas fa-times"></i></button>
+                <!--Tercera Fila-->
+                <button id="boton-4" class="btn border col-3 px-0 number" value=4>4</button>
+                <button id="boton-5" class="btn border col-3 px-0 number" value=5>5</button>
+                <button id="boton-6" class="btn border col-3 px-0 number" value=6>6</button>
+                <button id="boton-resta" class="btn border col-3 px-0 operador" value='-'><i class="fas fa-minus"></i></button>
+                <!--Cuarta Fila-->
+                <button id="boton-1" class="btn border col-3 px-0 number" value=1>1</button>
+                <button id="boton-2" class="btn border col-3 px-0 number" value=2>2</button>
+                <button id="boton-3" class="btn border col-3 px-0 number" value=3>3</button>
+                <button id="boton-suma" class="btn border col-3 px-0 operador" value='+'><i class="fas fa-plus"></i></button>
+                <!--Quinta Fila-->
+                <button id="boton-0" class="btn border col-3 px-0 number" value=0>0</button>
+                <button id="boton-punto" class="btn border col-3 px-0 operador-op" >.</button>
+                <button id="boton-igual" class="btn border col-3 px-0 operador" value='='><i class="fas fa-equals"></i></button>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 bg-light">
+          <p><b>Autor: </b>Jorge Osuna Quintana</p>
+          <p><b>Materia: </b>Programación Web</p>
+          <p><b>Hora: </b>3:00 p.m.</p>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+      crossorigin="anonymous"
+    ></script>
+    <script src="../JavaScript/bootstrap.js"></script>
+    <script src="../JavaScript/bootstrap.bundle.min.js"></script>
+    <script src="../JavaScript/bootstrap.bundle.js"></script>
+    <script src="../JavaScript/bootstrap.min.js"></script>
+    <script src="../JavaScript/calculadora.js"></script>
+  </body>
+</html>

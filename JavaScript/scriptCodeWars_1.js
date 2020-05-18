@@ -1,5 +1,5 @@
 //Ejercicio #1
-/* function firstNonConsecutive(arr) {
+function firstNonConsecutive(arr) {
 
   if (arr.lenght < 2) {
     console.log('Wep');
@@ -20,7 +20,7 @@
 }
 
 const first = firstNonConsecutive([1, 2, 3, 4, 6, 7, 8]);
-console.log(first); */
+console.log(first);
 
 //Ejercicio #2
 function expressionMatter(a, b, c) {
@@ -35,21 +35,21 @@ function expressionMatter(a, b, c) {
 }
 
 //Ejercicio #3
-/* function divide(weight){
-  
-  if((weight<=0 && weight<=100) ||weight==2)
-    return false;
-  
-  return !(weight%2);
-} */
+function divide(weight){
+
+if((weight<=0 && weight<=100) ||weight==2)
+return false;
+
+return !(weight%2);
+}
 
 //En JavaScript '0' es equivalente a false */
-/* function divide2(weight){
+function divide2(weight){
   return weight > 2 && !(weight % 2);
 }
 
 var test=divide(90);
-console.log(test); */
+console.log(test);
 
 //Ejercicio #4
 function index(array, n){

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="row justify-content-center">
+        <h2 >Tabla generada con valores aleatorios:</h2>
+    </div>
+    <div class="row">
+        <table class="table">
+            <tr class="thead-dark">
+                <th scope="col">#</th>
+                <th scope="col">Columna 1</th>
+                <th scope="col">Columna 2</th>
+                <th scope="col">Columna 3</th>
+                <th scope="col">Columna 4</th>
+                <th scope="col">Columna 5</th>
+            </tr>
+            <tbody class="table-body">
+                <tr *ngFor="let num of array; index as i;">
+                    <th scope="row">{{i+1}}</th>
+                    <td *ngFor="let temp of num">
+                        {{temp}}
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="row justify-content-md-center">
+        <div class="col-12 col-md-2 m-2"><b>Autor: </b>Jorge Osuna Quintana</div>
+        <div class="col-12 col-md-2 m-2"><b>Materia: </b>Programación Web</div>
+        <div class="col-12 col-md-2 m-2"><b>Hora: </b>3:00 p.m.</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+  </head>
+  <body>
+    <button id="botonClick">Haz click</button>
+    <label id="contador">Presiona el boton para ver la magia gg</label>
+
+    <script>
+      var boton = document.querySelector("#botonClick");
+      var label = document.querySelector("#contador");
+      var contador = 0;
+
+      var listenerClick = () => {
+        label.innerHTML = `El numero de click: ${++contador}`;
+      };
+      boton.addEventListener("click", listenerClick);
+    </script>
+  </body>
+</html>

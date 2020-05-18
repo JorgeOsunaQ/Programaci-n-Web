@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto"/>    
+</head>
+<body>
+    <section>
+        <div class="container mx-auto p-0">
+
+            <div id="display" class="row align-items-end justify-content-start">
+                <h3 class="col-12 mt-1 p-0">
+                    <b>Ingrese el número de imagenes que desea visualizar</b>
+                </h3>
+                <input id="in-display" class="mb-1 px-0 col-6" type="number" 
+                #cantidad (change)="cambiarImagenes(cantidad.value)"
+                min=1 max=496>
+            </div>  
+
+            <div class="row">
+                <div class="col-4 px-1" *ngFor="let i of info" >
+                    <div class="card bg-dark mb-2 p-3">
+                        <img src="{{i.image}}" alt="" class="card-img"/>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item"><b>id: </b>{{i.id}} </li>
+                            <li class="list-group-item"><b>Name: </b>{{i.name}}</li>
+                            <li class="list-group-item">
+                                <b>Ubicación: </b><button (click)="open(i.location.url)" 
+                                class="btn btn-link">{{i.location.name}}</button>
+                            </li>
+                                <ng-template #contenidoInfo> 
+                                    <ul class="list-group">
+                                        <li *ngFor="let dato of obtenerDatosPersonaje(i)">
+                                            <b>{{dato.nameProperty}}:</b> {{dato.data}}
+                                        </li>
+                                    </ul>
+                                </ng-template>
+                                <ng-template #nombre> <b>{{i.name}}</b> </ng-template>
+                            <button type="button" class="btn btn-light" [ngbPopover]="contenidoInfo" [popoverTitle]="nombre" placement="top">
+                                Info
+                            </button>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

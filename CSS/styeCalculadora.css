@@ -1,0 +1,76 @@
+body{
+  background-color: #FAFAFA;
+  font-family: 'Roboto',serif;
+}
+
+h3{
+  font-size: 2.1rem;
+  font-weight: 600;
+  width: 100%;
+}
+
+p{
+  font-size: 1.2rem;
+}
+
+i{
+  pointer-events: none;
+}
+.operador, .operador-op{
+  background-color: #579CFF;
+  color: #FFFFFF;
+}
+
+.btn{
+  font-size: 1.6rem;
+}
+
+#calculadora {
+  background-color: #F9F9F9;
+  border: 1px solid #000;
+  border-radius: 10px 10px 0% 0%; /* top left, top right, bottom right, bottom left */
+  font-size: 1.9em;
+}
+
+#display{
+  background-color: #f1f1f1;
+  border-radius: inherit;
+  border-bottom: 0.6px solid #000;
+  font-weight: 700;
+  font-size: 2em;
+  height: 7rem;
+}
+
+#memory{
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: rgba(0, 0, 0, 0.5);
+  text-align: end;
+  height: 0.7rem;
+}
+
+#botones{
+  background-color: #FFFFFF
+}
+
+#boton-igual{
+  background-color: #FFB430;
+}
+
+#boton-C, #boton-CE{
+  background-color: #FE512A;
+  font-weight: 700;
+}
+
+#boton-punto{
+  background-color: #FFFFFF;
+  color: #000;
+}
+
+#in-display{
+  background-color: transparent;
+  border: none;
+  text-align: end;
+  color: #000;
+  font: inherit;
+}

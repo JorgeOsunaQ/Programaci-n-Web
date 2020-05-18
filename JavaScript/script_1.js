@@ -4,3 +4,4 @@ for (var i = 0; i < 10; i++) {
   etiquetaP.style.paddingLeft = "1.2rem";
   document.body.append(etiquetaP);
 }
+

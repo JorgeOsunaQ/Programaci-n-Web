@@ -1,0 +1,20 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+table, th, td {
+    border: 1px solid black;
+    font-size: 1.2rem;
+    text-align: center;
+    vertical-align: middle;
+  }
+  td{
+      padding: 0.4rem;
+  }
+  
+  .table-head{
+      background-color: #FFA942;
+  }
+  .table-body{
+      background-color: #E6E6E6;
+  }

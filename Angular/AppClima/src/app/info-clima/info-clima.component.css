@@ -1,0 +1,24 @@
+body{
+    font-family: 'Roboto',serif;
+    border: none;
+    background-image: linear-gradient( rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.3)),url('../../assets/Images/landscape_background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+}
+p{
+    font-size: 1.4rem;
+}
+
+.contenedorClima{
+  background: rgba(179,220,237,1)!important;
+}
+
+.img-clima{
+    width: 50%;
+    margin: auto;
+}
+
+i{
+    font-size: 1.4rem;
+}
