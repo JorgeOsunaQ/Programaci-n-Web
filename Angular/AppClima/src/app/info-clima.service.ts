@@ -26,9 +26,9 @@ export class InfoClimaService {
             }
             return forkJoin(this._http.get(`http://www.7timer.info/bin/api.pl?lon=${infoGeo.longitud}
             &lat=${infoGeo.latitud}&product=civillight&output=json`),observeIP)
-          })
-        )
+          }))
       })
     )
   }
+  
 }

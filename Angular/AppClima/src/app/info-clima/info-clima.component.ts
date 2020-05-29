@@ -35,10 +35,10 @@ export class InfoClimaComponent implements OnInit {
   obtenerDatosDia(dataSerie){
     let fecha=dataSerie['date'].toString();
     let fechaFormatted= new Date(`${fecha.substring(0,4)}/${fecha.substring(4,6)}/${fecha.substring(6,8)}`)
-
+    let meses = ["Enero","Febrero","Marzo","Abril","Mayo","Junio","Julio","Agosto","Septiembre","Octubre","Noviembre","Diciembre"];
     return {
         "FechaUF":fechaFormatted,
-        "FechaF":`${fecha.substring(6,8)}/${fecha.substring(4,6)}/${fecha.substring(0,4)}`,
+        "FechaF":`${fecha.substring(6,8)} de ${meses[fechaFormatted.getMonth()]} de ${fecha.substring(0,4)}`,
         "Max":dataSerie['temp2m']['max'],
         "Min":dataSerie['temp2m']['min'],
         "Clima":dataSerie['weather']
@@ -73,7 +73,7 @@ export class InfoClimaComponent implements OnInit {
       break 
 
       case 6:
-        diaSemana='Sabádo'
+        diaSemana='Sábado'
       break 
     }
     return diaSemana

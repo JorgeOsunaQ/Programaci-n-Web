@@ -1,0 +1,32 @@
+<div class="container">
+
+        <div class="row mt-5" *ngIf="!loaded">
+
+         Cargando...
+        </div>
+
+        <div class="container" *ngIf="loaded">
+            <div class="row justify-content-center mt-5" >
+                <h2>{{nombreCiudad}},{{pais}},{{horaAct}}</h2>
+            </div>
+
+           <div class="row justify-content-center">
+                <div class="text-center col-12 col-lg-6 p-4" *ngFor="let data of datosClima['dataseries'].slice(0,5); index as i;">
+
+                    <div class="card bg-light justify-content-center">
+                        <div class="card-header bg-light p-0 text-center">
+                            <h3>{{data['date']['Dia']}}</h3>
+                            <h3>{{data['date']['Fecha'].toLocaleDateString()}}</h3>
+                        </div>
+                        <img src="{{changeImg(data['weather'])}}" alt="No se puede visualizar la imagen: {{data['weather']}}" 
+                        class="card-img">
+                        <div class="card-footer">
+                            <h4>Max:{{data['temp2m']['max']}}</h4>
+                            <h4>Min:{{data['temp2m']['min']}}</h4>
+                        </div> 
+                    </div>
+                </div>
+            </div>
+        </div>
+
+</div>

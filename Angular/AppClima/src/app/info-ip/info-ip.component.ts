@@ -36,5 +36,4 @@ export class InfoIpComponent implements OnInit {
         }
       )
   }
-
 }

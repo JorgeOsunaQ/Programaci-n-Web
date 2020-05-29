@@ -14,11 +14,11 @@
         <div *ngIf="loaded">
             <app-info-ip></app-info-ip>
             <div class="row justify-content-center">
-                <div class="col-12 col-md-5 mb-2 px-0">
+                <div class="col-12 col-md-6 col-lg-5 mb-2 px-0">
                     <div class="card bg-light text-center contenedorClima">
                         <div class="card-header bg-light p-0">
                             <p class="mt-3 mb-0"><b>{{obtenerDiaSemana(todayInfo.FechaUF.getDay())}}</b></p>
-                            <p class=""><b>Fecha: </b>{{todayInfo.FechaF}}</p>
+                            <p class="">{{todayInfo.FechaF}}</p>
                         </div>
                         <img src="{{cambiarImagen(todayInfo.Clima)}}" alt="No se pudo obtener imagen" 
                         class="img-clima card-img">
@@ -31,11 +31,11 @@
             
             </div>
             <div class="row justify-content-center">
-                <div class="col-12 col-md-5 mb-2 px-0" *ngFor="let dataserie of infoClima.slice(1,5)">
+                <div class="col-12 col-md-6 col-lg-5 mb-2 px-0" *ngFor="let dataserie of infoClima.slice(1,5)">
                     <div class="card bg-light text-center contenedorClima">
                         <div class="card-header bg-light p-0">
                             <p class="mt-3 mb-0"><b>{{obtenerDiaSemana(dataserie.FechaUF.getDay())}}</b></p>
-                            <p class="pb-0"><b>Fecha:</b> {{dataserie.FechaF}}</p>
+                            <p class="pb-0">{{dataserie.FechaF}}</p>
                         </div>
                         <img src="{{cambiarImagen(todayInfo.Clima)}}" alt="No se pudo obtener imagen" 
                         class="img-clima card-img">

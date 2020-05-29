@@ -7,6 +7,7 @@ import {HttpClient} from '@angular/common/http'
 export class GeolocalizacionService {
   ipURL='https://api.ipify.org?format=json'
   ipStackBase='http://api.ipstack.com/'
+  key='f95ed04b6922fd52b78ce7f73dedbcae';
 
   constructor(private _http:HttpClient) { }
   getIP(){
@@ -15,6 +16,6 @@ export class GeolocalizacionService {
   }
 
   getIPInfo(ip){
-    return this._http.get(`${this.ipStackBase}${ip}?access_key=f95ed04b6922fd52b78ce7f73dedbcae&format=1`)
+    return this._http.get(`${this.ipStackBase}${ip}?access_key=${this.key}&format=1`)
   }
 }
