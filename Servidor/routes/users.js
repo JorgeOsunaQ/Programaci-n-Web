@@ -8,7 +8,7 @@ module.exports= (models)=>{
         const usuarios= await models.usuarioModel.findAll({
             attributes: ["username", "name", "lastname", "age"]
         });
-
+        
         res.send(usuarios)
     });
     
