@@ -5,7 +5,7 @@ class Customers extends Model {}
 module.exports=(sequelize)=>{Customers.init(
     {
         Id:{
-            type: Sequelize.INTEGER,
+            type: Sequelize.INTEGER(1000),
             primaryKey: true,
             autoIncrement: true
         },

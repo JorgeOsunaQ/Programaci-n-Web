@@ -5,7 +5,7 @@ class Albums extends Model {}
 module.exports=(sequelize)=>{Albums.init(
     {
         Id:{
-            type: Sequelize.INTEGER,
+            type: Sequelize.INTEGER(10),
             primaryKey: true,
             autoIncrement: true
         },

@@ -5,7 +5,7 @@ class Employees extends Model {}
 module.exports=(sequelize)=>{Employees.init(
     {
         Id:{
-            type: Sequelize.INTEGER,
+            type: Sequelize.INTEGER(10),
             primaryKey: true,
             autoIncrement: true
         },
@@ -22,7 +22,8 @@ module.exports=(sequelize)=>{Employees.init(
             type: Sequelize.STRING(70)
         },
         ReporsTo:{
-            type:Sequelize.INTEGER
+            type:Sequelize.INTEGER,
+            allowNull:true
         },
         BirthDate:{
             type: Sequelize.DATE

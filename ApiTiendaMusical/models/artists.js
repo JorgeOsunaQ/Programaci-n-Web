@@ -5,7 +5,7 @@ class Artists extends Model {}
 module.exports=(sequelize)=>{Artists.init(
     {
         Id:{
-            type: Sequelize.INTEGER,
+            type: Sequelize.INTEGER(100),
             primaryKey: true,
             autoIncrement: true
         },

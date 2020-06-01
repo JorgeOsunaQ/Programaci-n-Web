@@ -5,7 +5,7 @@ class Tracks extends Model {}
 module.exports=(sequelize)=>{Tracks.init(
     {
         Id:{
-            type: Sequelize.INTEGER,
+            type: Sequelize.INTEGER(100),
             primaryKey: true,
             autoIncrement: true
         },
@@ -19,7 +19,8 @@ module.exports=(sequelize)=>{Tracks.init(
             type: Sequelize.INTEGER
         },
         GenreId:{
-            type: Sequelize.INTEGER
+            type: Sequelize.INTEGER,
+            allowNull: true
         },
         Composer:{
             type: Sequelize.STRING(200)
