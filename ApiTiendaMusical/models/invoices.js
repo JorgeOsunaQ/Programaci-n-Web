@@ -9,7 +9,7 @@ module.exports=(sequelize)=>{Invoices.init(
             primaryKey: true,
             autoIncrement: true
         },
-        CustomeId:{
+        CustomerId:{
             type: Sequelize.INTEGER
         },
         InvoiceDate:{
